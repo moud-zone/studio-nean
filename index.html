@@ -1,0 +1,734 @@
+<!doctype html>
+
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+      <title>Studio Neon</title>
+      <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap"
+         rel="stylesheet"
+      />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+         rel="stylesheet"
+      />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+         rel="stylesheet"
+      />
+      <script src="js/tailwind-config.js"></script>
+      <link rel="stylesheet" href="css/style.css" />
+   </head>
+   <body class="bg-background-light text-slate-900 selection:bg-primary/30">
+      <div
+         class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden"
+      >
+         <div class="layout-container flex h-full grow flex-col">
+            <!-- Top Navigation -->
+            <header
+               class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 px-6 md:px-20 py-6 bg-background-light/80 backdrop-blur-md sticky top-0 z-50"
+            >
+               <div class="flex items-center gap-2 text-slate-900">
+                  <div
+                     class="size-6 flex items-center justify-center bg-primary rounded-full"
+                  >
+                     <span class="material-symbols-outlined text-sm"
+                        >flash_on</span
+                     >
+                  </div>
+                  <h2
+                     class="text-xl font-bold leading-tight tracking-tight uppercase italic"
+                  >
+                     Studio Neon
+                  </h2>
+               </div>
+               <div
+                  class="hidden md:flex flex-1 justify-end gap-12 items-center"
+               >
+                  <nav class="flex items-center gap-10">
+                     <a
+                        class="text-slate-900 text-sm font-medium uppercase tracking-widest hover:text-primary transition-colors"
+                        href="#"
+                        >Work</a
+                     >
+                     <a
+                        class="text-slate-900 text-sm font-medium uppercase tracking-widest hover:text-primary transition-colors"
+                        href="#"
+                        >Services</a
+                     >
+                     <a
+                        class="text-slate-900 text-sm font-medium uppercase tracking-widest hover:text-primary transition-colors"
+                        href="#"
+                        >Manifesto</a
+                     >
+                     <a
+                        class="text-slate-900 text-sm font-medium uppercase tracking-widest hover:text-primary transition-colors"
+                        href="#"
+                        >Contact</a
+                     >
+                  </nav>
+                  <button
+                     class="flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-primary text-slate-900 text-sm font-bold uppercase tracking-widest hover:scale-105 transition-transform"
+                  >
+                     Start a Project
+                  </button>
+               </div>
+               <div class="md:hidden">
+                  <span class="material-symbols-outlined text-3xl">menu</span>
+               </div>
+            </header>
+            <main class="flex-1">
+               <!-- Hero Section -->
+               <section class="px-4 md:px-10 py-4">
+                  <div
+                     class="relative w-full aspect-[16/9] md:min-h-[80vh] flex flex-col items-center justify-center overflow-hidden rounded-xl bg-slate-900"
+                  >
+                     <div class="absolute inset-0 z-0">
+                        <img
+                           class="w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-1000"
+                           data-alt="Cinematic moody portrait of a creative professional"
+                           src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHRhoJNCZ5JnFa82kXNAJMQwp8Q-PQvKlLB4vKfhrDGG8UAt2swdo8wZgSEwv9P1NRhV7KJcd-H4f3eSuAjrsm94-iESCUDNL3TXq4hcvH7V3R65v5SEbf-o63uB6E1NgrKS6XtLJfbqMA2wMcmrEdi3AZYvtXmnPdzE3ivt2IATF6_Q1-d6MnyZNAV61heHnAY_w-CewB07Cm5kkmvSamKQgB6LHh3YWSXS5ivv-sQwh5nX_fiF3EfA4EZX_7VV07zRUinfUfuMg"
+                        />
+                        <div
+                           class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent"
+                        ></div>
+                     </div>
+                     <div
+                        class="relative z-10 flex flex-col gap-8 text-center px-6 max-w-5xl"
+                     >
+                        <h1
+                           class="text-white text-5xl md:text-8xl font-medium italic leading-[1.1] tracking-tight"
+                        >
+                           Architects of
+                           <span class="text-primary">Digital Elegance</span>
+                        </h1>
+                        <p
+                           class="text-white/80 text-lg md:text-2xl font-light leading-relaxed max-w-2xl mx-auto"
+                        >
+                           A creative agency dedicated to high-end brand
+                           storytelling and cinematic digital experiences for
+                           global luxury brands.
+                        </p>
+                        <div class="flex flex-wrap justify-center gap-4">
+                           <button
+                              class="flex min-w-[180px] cursor-pointer items-center justify-center rounded-full h-14 px-8 bg-primary text-slate-900 text-base font-bold uppercase tracking-widest"
+                           >
+                              View Portfolio
+                           </button>
+                           <button
+                              class="flex min-w-[180px] cursor-pointer items-center justify-center rounded-full h-14 px-8 border border-white/30 text-white text-base font-bold uppercase tracking-widest hover:bg-white hover:text-slate-900 transition-all"
+                           >
+                              Our Process
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <!-- Featured Work Grid -->
+               <section class="px-6 md:px-20 py-24">
+                  <div
+                     class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6"
+                  >
+                     <div class="max-w-xl">
+                        <span
+                           class="text-primary font-bold uppercase tracking-widest text-sm block mb-4"
+                           >Portfolio</span
+                        >
+                        <h2
+                           class="text-slate-900 text-5xl md:text-6xl font-medium italic"
+                        >
+                           Selected Works
+                        </h2>
+                     </div>
+                     <p class="text-slate-500 text-lg max-w-xs italic">
+                        A curation of our most ambitious projects across
+                        fashion, tech, and lifestyle.
+                     </p>
+                  </div>
+                  <div
+                     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                  >
+                     <!-- Portfolio Item 1 -->
+                     <div class="group flex flex-col gap-4">
+                        <div
+                           class="aspect-[3/4] overflow-hidden rounded-lg bg-slate-100 relative"
+                        >
+                           <img
+                              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                              data-alt="Minimalist high fashion editorial photography"
+                              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8hN1r20kZ8Bp0wa0kA8aGYMO_bDriL_MmUMUYQ6KYMZKeLv9ElYPFVr8YPGHGlZqfG8OV6Lh7_K4YCIcyuEZM1BAj4DIwJec258rB_k-0gZiKzlwbZypZgjeeC6XG-ib1NYxrseh8DRdg1vaGVa0pnkyEWjERrVErdRmtNDfUsHWpbvnx9KhaN0Z9qao3ThoftKz_VnEvbOnjzgTYu0CeJBnqbH9y5e84iD76x-u3769ynGzuyg9yeG41T_2WCZN57ComN3EuP7Y"
+                           />
+                           <div
+                              class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                           >
+                              <span
+                                 class="material-symbols-outlined text-slate-900 text-4xl"
+                                 >arrow_outward</span
+                              >
+                           </div>
+                        </div>
+                        <div class="flex justify-between items-start">
+                           <div>
+                              <h3 class="text-xl font-bold italic">
+                                 Vogue Editorial
+                              </h3>
+                              <p
+                                 class="text-slate-500 uppercase text-xs tracking-widest mt-1"
+                              >
+                                 Art Direction / Digital Design
+                              </p>
+                           </div>
+                           <span
+                              class="text-slate-300 font-serif text-2xl italic"
+                              >01</span
+                           >
+                        </div>
+                     </div>
+                     <!-- Portfolio Item 2 -->
+                     <div class="group flex flex-col gap-4">
+                        <div
+                           class="aspect-[3/4] overflow-hidden rounded-lg bg-slate-100 relative"
+                        >
+                           <img
+                              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                              data-alt="Luxury watch close-up cinematic shot"
+                              src="https://lh3.googleusercontent.com/aida-public/AB6AXuANo2pE-LOlD23ELCWeisdInm5MuUME_WyV0E8iWMqpfRlJJ3oyuUZggsIANMDUewBmjpbZZRGi1r0jt52BmeMArvUXcP3yPHxz6LaMefrp7tHH5HsX6DhfPIXgcc9lDfNttr0CtaBZiltA0uSabPjSb2U2ckwvj7m5Om-OffUzNmfuyCdgRm2BNwNQqeyqwIII4Rv1ImQnNg_hgUrboZ-oCOFyDf_tQu6-Sf070Jn5MrbLoZyg8OPd6xjj0bwz_xNMummMUSRDzX8"
+                           />
+                           <div
+                              class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                           >
+                              <span
+                                 class="material-symbols-outlined text-slate-900 text-4xl"
+                                 >arrow_outward</span
+                              >
+                           </div>
+                        </div>
+                        <div class="flex justify-between items-start">
+                           <div>
+                              <h3 class="text-xl font-bold italic">
+                                 Luxe Watch Co.
+                              </h3>
+                              <p
+                                 class="text-slate-500 uppercase text-xs tracking-widest mt-1"
+                              >
+                                 E-Commerce / Branding
+                              </p>
+                           </div>
+                           <span
+                              class="text-slate-300 font-serif text-2xl italic"
+                              >02</span
+                           >
+                        </div>
+                     </div>
+                     <!-- Portfolio Item 3 -->
+                     <div class="group flex flex-col gap-4">
+                        <div
+                           class="aspect-[3/4] overflow-hidden rounded-lg bg-slate-100 relative"
+                        >
+                           <img
+                              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                              data-alt="Urban streetwear lifestyle photography"
+                              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxIA5M-c91_1NuoraZFuGeNofuBkkds_iQbbtk5uwBtyICWoRaN0_DnL0BDeEL7ZkAqeiQZD9JftIucoBE-fsKobr3kF8fO4NFiKErzHyU2iFhtPf_SFYTSOeXJsf5vSrTsguPZKCdFPlzAnvUo1JtlMakfZc6V7ljgupblAdpnIs-UL_-O4lbPYGjyeLo7B0a4GHFUzBrtHTNDAB406rp3jZIer_7YTJtuffmFdGPPjEac7y0Qrbfg7Clt2u06d5eZq7U_8Pt6v0"
+                           />
+                           <div
+                              class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                           >
+                              <span
+                                 class="material-symbols-outlined text-slate-900 text-4xl"
+                                 >arrow_outward</span
+                              >
+                           </div>
+                        </div>
+                        <div class="flex justify-between items-start">
+                           <div>
+                              <h3 class="text-xl font-bold italic">
+                                 Urban Nomad
+                              </h3>
+                              <p
+                                 class="text-slate-500 uppercase text-xs tracking-widest mt-1"
+                              >
+                                 Web Experience
+                              </p>
+                           </div>
+                           <span
+                              class="text-slate-300 font-serif text-2xl italic"
+                              >03</span
+                           >
+                        </div>
+                     </div>
+                     <!-- Portfolio Item 4 -->
+                     <div class="group flex flex-col gap-4">
+                        <div
+                           class="aspect-[3/4] overflow-hidden rounded-lg bg-slate-100 relative"
+                        >
+                           <img
+                              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                              data-alt="Aesthetic perfume bottle with lighting effects"
+                              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF1425ONF3WDr5ibANZgEnDW9jlm9TeLDLXCQQUbF7nXi_1TgT0imfvUtPcTGDv97NKfEPiPaU5rdPd0tweEsDSWFt8sEOfGp4EVKk1r9R9LY6JDpAyyzxrKqe60Fzeq7u1jkijWkzjPczUds1vAMi1uK7Ax7UbtdxJgGC-ue9z8LS8Q0XgPlfW_sUkMf0PaNeeUVaqDlpVQPGSvX87_h9Ko48d1q4cYetlz3S4QO6QJUAG_TaKMzhgs6tHwG4ZfBe6kgZE1rSGG0"
+                           />
+                           <div
+                              class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                           >
+                              <span
+                                 class="material-symbols-outlined text-slate-900 text-4xl"
+                                 >arrow_outward</span
+                              >
+                           </div>
+                        </div>
+                        <div class="flex justify-between items-start">
+                           <div>
+                              <h3 class="text-xl font-bold italic">
+                                 Ethereal Fragrance
+                              </h3>
+                              <p
+                                 class="text-slate-500 uppercase text-xs tracking-widest mt-1"
+                              >
+                                 Packaging / Visuals
+                              </p>
+                           </div>
+                           <span
+                              class="text-slate-300 font-serif text-2xl italic"
+                              >04</span
+                           >
+                        </div>
+                     </div>
+                     <!-- Portfolio Item 5 -->
+                     <div class="group flex flex-col gap-4">
+                        <div
+                           class="aspect-[3/4] overflow-hidden rounded-lg bg-slate-100 relative"
+                        >
+                           <img
+                              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                              data-alt="Minimalist modern interior design scandinavian style"
+                              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC48RUVVCm-7xG-jZi4UcHNAiATox6wxkXGZzWW1qf0ZRQmFF1tOhJNegEWKbrqPA73rih5PHFZx2-Oi4J_1wv190E89QprqVKjofDpVEM_h9Jw7liA9xzMSelWOsRLbEHCdkuXJWI9nSUGnJzK9nFhgVVkvCGCmDlGqi0ZJUOSlL9y8_qMNh0Iqp6Aa0a2droEWGsZDlH66yM2mkxm3KDCEfK1bf23IuNrIKbXgI1l6kutrPyFPG9MKZOYw0mWGDyqy5pdJ7CILtc"
+                           />
+                           <div
+                              class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                           >
+                              <span
+                                 class="material-symbols-outlined text-slate-900 text-4xl"
+                                 >arrow_outward</span
+                              >
+                           </div>
+                        </div>
+                        <div class="flex justify-between items-start">
+                           <div>
+                              <h3 class="text-xl font-bold italic">
+                                 Nordic Interiors
+                              </h3>
+                              <p
+                                 class="text-slate-500 uppercase text-xs tracking-widest mt-1"
+                              >
+                                 Immersive Portfolio
+                              </p>
+                           </div>
+                           <span
+                              class="text-slate-300 font-serif text-2xl italic"
+                              >05</span
+                           >
+                        </div>
+                     </div>
+                     <!-- Portfolio Item 6 -->
+                     <div class="group flex flex-col gap-4">
+                        <div
+                           class="aspect-[3/4] overflow-hidden rounded-lg bg-slate-100 relative"
+                        >
+                           <img
+                              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                              data-alt="Abstract tech background with neon highlights"
+                              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0PyEXTRL9MyMf3UmSYw-VHX9_viJExJDwABRojThaWQLw99YPAYN5Th79N_E10-7n2rklHVGV4b_asTr4IGMqlvgSwmMMCiD7zsGxzBmo4B1QyB-0Nr4bNbDVvxlKBW9coXjIxhhPzWrzYQeNkgZSkGzVl5BoBLeVWIz8HISyTbQ-2StdevVHEHA_UTC2v0DCMzsSeUaDMbs82-g71s_EO5Lk84f45GNjH9cIEL5N4tGtcn_OZsNNgIpp9b2Lbk4_VS1jwXKeEEM"
+                           />
+                           <div
+                              class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+                           >
+                              <span
+                                 class="material-symbols-outlined text-slate-900 text-4xl"
+                                 >arrow_outward</span
+                              >
+                           </div>
+                        </div>
+                        <div class="flex justify-between items-start">
+                           <div>
+                              <h3 class="text-xl font-bold italic">
+                                 Midnight Kinetic
+                              </h3>
+                              <p
+                                 class="text-slate-500 uppercase text-xs tracking-widest mt-1"
+                              >
+                                 App Interface
+                              </p>
+                           </div>
+                           <span
+                              class="text-slate-300 font-serif text-2xl italic"
+                              >06</span
+                           >
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <!-- Services Section -->
+               <section
+                  class="bg-background-dark text-white py-24 px-6 md:px-20 overflow-hidden relative"
+               >
+                  <div
+                     class="absolute top-0 right-0 w-1/3 h-full bg-primary/5 -skew-x-12 translate-x-20"
+                  ></div>
+                  <div class="max-w-6xl mx-auto relative z-10">
+                     <span
+                        class="text-primary font-bold uppercase tracking-widest text-sm block mb-12"
+                        >Expertise</span
+                     >
+                     <div class="space-y-0">
+                        <div
+                           class="group border-b border-white/10 py-10 md:py-16 flex flex-col md:flex-row md:items-center justify-between hover:px-6 transition-all duration-500 cursor-pointer"
+                        >
+                           <h3
+                              class="text-4xl md:text-7xl font-medium italic group-hover:text-primary transition-colors"
+                           >
+                              Brand Identity
+                           </h3>
+                           <div class="flex items-center gap-6 mt-4 md:mt-0">
+                              <p
+                                 class="text-white/50 max-w-xs text-sm md:text-base"
+                              >
+                                 Developing unique visual systems that resonate
+                                 with your core audience and elevate brand
+                                 perception.
+                              </p>
+                              <span
+                                 class="material-symbols-outlined text-4xl text-primary opacity-0 group-hover:opacity-100 transition-opacity"
+                                 >trending_flat</span
+                              >
+                           </div>
+                        </div>
+                        <div
+                           class="group border-b border-white/10 py-10 md:py-16 flex flex-col md:flex-row md:items-center justify-between hover:px-6 transition-all duration-500 cursor-pointer"
+                        >
+                           <h3
+                              class="text-4xl md:text-7xl font-medium italic group-hover:text-primary transition-colors"
+                           >
+                              Digital Design
+                           </h3>
+                           <div class="flex items-center gap-6 mt-4 md:mt-0">
+                              <p
+                                 class="text-white/50 max-w-xs text-sm md:text-base"
+                              >
+                                 Creating immersive digital environments that
+                                 blend functionality with cinematic aesthetic
+                                 appeal.
+                              </p>
+                              <span
+                                 class="material-symbols-outlined text-4xl text-primary opacity-0 group-hover:opacity-100 transition-opacity"
+                                 >trending_flat</span
+                              >
+                           </div>
+                        </div>
+                        <div
+                           class="group border-b border-white/10 py-10 md:py-16 flex flex-col md:flex-row md:items-center justify-between hover:px-6 transition-all duration-500 cursor-pointer"
+                        >
+                           <h3
+                              class="text-4xl md:text-7xl font-medium italic group-hover:text-primary transition-colors"
+                           >
+                              Art Direction
+                           </h3>
+                           <div class="flex items-center gap-6 mt-4 md:mt-0">
+                              <p
+                                 class="text-white/50 max-w-xs text-sm md:text-base"
+                              >
+                                 Curating high-end visual content and
+                                 photography that tells a compelling brand
+                                 story.
+                              </p>
+                              <span
+                                 class="material-symbols-outlined text-4xl text-primary opacity-0 group-hover:opacity-100 transition-opacity"
+                                 >trending_flat</span
+                              >
+                           </div>
+                        </div>
+                        <div
+                           class="group py-10 md:py-16 flex flex-col md:flex-row md:items-center justify-between hover:px-6 transition-all duration-500 cursor-pointer"
+                        >
+                           <h3
+                              class="text-4xl md:text-7xl font-medium italic group-hover:text-primary transition-colors"
+                           >
+                              Web Development
+                           </h3>
+                           <div class="flex items-center gap-6 mt-4 md:mt-0">
+                              <p
+                                 class="text-white/50 max-w-xs text-sm md:text-base"
+                              >
+                                 Building performant, custom-coded websites that
+                                 push the boundaries of modern interaction.
+                              </p>
+                              <span
+                                 class="material-symbols-outlined text-4xl text-primary opacity-0 group-hover:opacity-100 transition-opacity"
+                                 >trending_flat</span
+                              >
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <!-- Team Section -->
+               <section class="px-6 md:px-20 py-24 bg-background-light">
+                  <div class="text-center max-w-2xl mx-auto mb-20">
+                     <span
+                        class="text-primary font-bold uppercase tracking-widest text-sm block mb-4"
+                        >Our Minds</span
+                     >
+                     <h2
+                        class="text-slate-900 text-5xl font-medium italic mb-6"
+                     >
+                        The Collective
+                     </h2>
+                     <p class="text-slate-500 italic text-lg leading-relaxed">
+                        A diverse group of designers, thinkers, and builders
+                        united by a passion for exquisite digital craft.
+                     </p>
+                  </div>
+                  <div
+                     class="grid grid-cols-2 md:grid-cols-4 gap-12 max-w-6xl mx-auto"
+                  >
+                     <div class="text-center flex flex-col items-center gap-4">
+                        <div
+                           class="size-40 rounded-full overflow-hidden grayscale hover:grayscale-0 transition-all border-4 border-white shadow-xl"
+                        >
+                           <img
+                              class="w-full h-full object-cover"
+                              data-alt="Portrait of a male creative director"
+                              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsbJyrmVL8T6CBi8ChYP0bIET_jlHvC5TD_X_ol2FiORRwOQADXW7D0fFfbzIWRQoRct_PyCa9_fERGVOezfOvUU_JB2ijaE90Y72Bt-eUt5OUOc0xXSoscIzX2FP6v_q3nefszRp6ve8tVSv9UZzuEyBpz5F-6BE9j7BWzksCCPgO0EiQGN-MP0qSMhe1MftxP9AvwS-uXKSxCrRqIAdClNy-R3mL1yb6jeY6NAN6-LClFCD14k7vXnG9L2g1f940k1PTFuQNnM0"
+                           />
+                        </div>
+                        <div>
+                           <h4 class="text-xl font-bold italic">Julian Vane</h4>
+                           <p
+                              class="text-slate-500 uppercase text-[10px] tracking-widest font-bold"
+                           >
+                              Creative Director
+                           </p>
+                        </div>
+                     </div>
+                     <div class="text-center flex flex-col items-center gap-4">
+                        <div
+                           class="size-40 rounded-full overflow-hidden grayscale hover:grayscale-0 transition-all border-4 border-white shadow-xl"
+                        >
+                           <img
+                              class="w-full h-full object-cover"
+                              data-alt="Portrait of a female design lead"
+                              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzvX2LeZGPcTXwW84froAIMk9guR54VkVjQ4PfSKV7xTJrNrky7kzC9_qPl5jMB75Hf3YO4IwCr_A8Qw3Sd2B-hOiTfa3Kf4XEW8Cn-g_ur_Heyo8QE4l1bVg2tpjl4H0eLgWfE6HpbnxdPfpF9l8DrpRaIt2m0vIVWDQnOmPS5XAcwNDg0LL078hCpL2cWJoFY_ngKuYsTEWfKrtIA2QPO4AMfNElefPz79P63tfzrU99lwRLm4La5RCpY-QJBRMvtOqxzs2ojxs"
+                           />
+                        </div>
+                        <div>
+                           <h4 class="text-xl font-bold italic">Elena Rose</h4>
+                           <p
+                              class="text-slate-500 uppercase text-[10px] tracking-widest font-bold"
+                           >
+                              Lead Designer
+                           </p>
+                        </div>
+                     </div>
+                     <div class="text-center flex flex-col items-center gap-4">
+                        <div
+                           class="size-40 rounded-full overflow-hidden grayscale hover:grayscale-0 transition-all border-4 border-white shadow-xl"
+                        >
+                           <img
+                              class="w-full h-full object-cover"
+                              data-alt="Portrait of a male technical lead"
+                              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFruchqKc7tQzn2_QJPA-jomQj93ockIujUenP7aUK804SxRGon_MSIOqEOdheC61jxnab7ZpiEnp-6oZs0gUxrujBg9eER3lNNyq1g3416ylmwtUCHphprxzB00-NaRMUVj41u-lMsjQt7SIei7U5knNhGvo_O45luMMVUQLWV5kd4A6-LRKWHayMMus95oSOZVU4lcZsP92LUY1a-pUZ-M0lqIlBwHGd2hx6hUHYeycViYDvfWjV3fAdFmjn3_vUnjj7AZD56RE"
+                           />
+                        </div>
+                        <div>
+                           <h4 class="text-xl font-bold italic">
+                              Marcus Thorne
+                           </h4>
+                           <p
+                              class="text-slate-500 uppercase text-[10px] tracking-widest font-bold"
+                           >
+                              Tech Lead
+                           </p>
+                        </div>
+                     </div>
+                     <div class="text-center flex flex-col items-center gap-4">
+                        <div
+                           class="size-40 rounded-full overflow-hidden grayscale hover:grayscale-0 transition-all border-4 border-white shadow-xl"
+                        >
+                           <img
+                              class="w-full h-full object-cover"
+                              data-alt="Portrait of a female brand strategist"
+                              src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6SfHToF7q2oqLENTCglbkoSGDLB6wYUWMEQfXjLdxGUCiAMufIVnk0RKQ-4r1osPM8Fc4segxB_lgDwQ6Ggb54D1bkp1hG_iyANffjX5fTw53TFs9ktQCRnKED-UTKLQsi8KnODrvci4-t8OvnSgZaaVe1Sq7l22UR7TbvknTwAVvLC73l5hIZs9RHeH8s4E3B3ZoiURpahp20poeFArF2L4F0x0fcEir6VggpFK-G8Obi0kdFZvH_kx-KePQio2PbMALisLqIMk"
+                           />
+                        </div>
+                        <div>
+                           <h4 class="text-xl font-bold italic">Sofia Chen</h4>
+                           <p
+                              class="text-slate-500 uppercase text-[10px] tracking-widest font-bold"
+                           >
+                              Strategist
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+               <!-- Contact Section -->
+               <section class="px-6 md:px-20 py-24 bg-white">
+                  <div
+                     class="max-w-6xl mx-auto flex flex-col md:flex-row gap-20"
+                  >
+                     <div class="md:w-1/2">
+                        <h2
+                           class="text-6xl md:text-8xl font-medium italic tracking-tighter mb-10 leading-none"
+                        >
+                           Let's
+                           <span
+                              class="text-primary underline decoration-2 underline-offset-8"
+                              >talk</span
+                           >
+                        </h2>
+                        <p
+                           class="text-slate-600 text-xl mb-12 max-w-md leading-relaxed"
+                        >
+                           Ready to transform your digital presence? We're
+                           currently accepting new projects for 2024.
+                        </p>
+                        <div class="space-y-6">
+                           <div class="flex items-center gap-4">
+                              <div
+                                 class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-slate-900"
+                              >
+                                 <span class="material-symbols-outlined"
+                                    >mail</span
+                                 >
+                              </div>
+                              <span class="text-lg font-bold italic"
+                                 >hello@studioneon.com</span
+                              >
+                           </div>
+                           <div class="flex items-center gap-4">
+                              <div
+                                 class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-slate-900"
+                              >
+                                 <span class="material-symbols-outlined"
+                                    >location_on</span
+                                 >
+                              </div>
+                              <span
+                                 class="text-lg font-bold italic"
+                                 data-location="Paris"
+                                 >Rue de Rivoli, Paris</span
+                              >
+                           </div>
+                        </div>
+                     </div>
+                     <div class="md:w-1/2">
+                        <form class="flex flex-col gap-8">
+                           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                              <div class="flex flex-col gap-2">
+                                 <label
+                                    class="uppercase text-[10px] font-bold tracking-[0.2em] text-slate-400"
+                                    >Name</label
+                                 >
+                                 <input
+                                    class="bg-transparent border-b-2 border-slate-100 focus:border-primary focus:ring-0 px-0 py-3 text-lg font-bold italic outline-none transition-colors"
+                                    placeholder="Type here..."
+                                    type="text"
+                                 />
+                              </div>
+                              <div class="flex flex-col gap-2">
+                                 <label
+                                    class="uppercase text-[10px] font-bold tracking-[0.2em] text-slate-400"
+                                    >Email</label
+                                 >
+                                 <input
+                                    class="bg-transparent border-b-2 border-slate-100 focus:border-primary focus:ring-0 px-0 py-3 text-lg font-bold italic outline-none transition-colors"
+                                    placeholder="your@email.com"
+                                    type="email"
+                                 />
+                              </div>
+                           </div>
+                           <div class="flex flex-col gap-2">
+                              <label
+                                 class="uppercase text-[10px] font-bold tracking-[0.2em] text-slate-400"
+                                 >Message</label
+                              >
+                              <textarea
+                                 class="bg-transparent border-b-2 border-slate-100 focus:border-primary focus:ring-0 px-0 py-3 text-lg font-bold italic outline-none transition-colors resize-none"
+                                 placeholder="Tell us about your project..."
+                                 rows="4"
+                              ></textarea>
+                           </div>
+                           <button
+                              class="self-start flex min-w-[200px] cursor-pointer items-center justify-center rounded-full h-16 px-10 bg-primary text-slate-900 text-base font-bold uppercase tracking-widest hover:bg-slate-900 hover:text-white transition-all shadow-lg hover:shadow-primary/20"
+                              type="submit"
+                           >
+                              Send Message
+                           </button>
+                        </form>
+                     </div>
+                  </div>
+               </section>
+            </main>
+            <!-- Footer -->
+            <footer class="bg-background-dark text-white px-6 md:px-20 py-16">
+               <div
+                  class="flex flex-col md:flex-row justify-between items-center gap-12 border-b border-white/5 pb-16"
+               >
+                  <div class="flex items-center gap-4 text-white">
+                     <div
+                        class="size-8 flex items-center justify-center bg-primary rounded-full"
+                     >
+                        <span
+                           class="material-symbols-outlined text-slate-900 text-lg"
+                           >flash_on</span
+                        >
+                     </div>
+                     <h2
+                        class="text-3xl font-bold leading-tight tracking-tight uppercase italic"
+                     >
+                        Studio Neon
+                     </h2>
+                  </div>
+                  <div class="flex gap-10">
+                     <a
+                        class="text-white/60 hover:text-primary transition-colors uppercase text-xs tracking-widest font-bold"
+                        href="#"
+                        >Instagram</a
+                     >
+                     <a
+                        class="text-white/60 hover:text-primary transition-colors uppercase text-xs tracking-widest font-bold"
+                        href="#"
+                        >LinkedIn</a
+                     >
+                     <a
+                        class="text-white/60 hover:text-primary transition-colors uppercase text-xs tracking-widest font-bold"
+                        href="#"
+                        >Twitter / X</a
+                     >
+                     <a
+                        class="text-white/60 hover:text-primary transition-colors uppercase text-xs tracking-widest font-bold"
+                        href="#"
+                        >Behance</a
+                     >
+                  </div>
+               </div>
+               <div
+                  class="flex flex-col md:flex-row justify-between items-center pt-8 gap-4"
+               >
+                  <p class="text-white/40 text-sm">
+                     © 2024 Studio Neon. All rights reserved.
+                  </p>
+                  <div class="flex gap-8 text-white/40 text-sm">
+                     <a class="hover:text-white transition-colors" href="#"
+                        >Privacy Policy</a
+                     >
+                     <a class="hover:text-white transition-colors" href="#"
+                        >Terms of Service</a
+                     >
+                  </div>
+               </div>
+            </footer>
+         </div>
+      </div>
+   </body>
+</html>
